@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane fx:id="txtField" prefHeight="1080.0" prefWidth="1020.0">
+         <children>
+            <Button fx:id="Submit" layoutX="14.0" layoutY="668.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Submit" />
+            <TextField fx:id="tfFirsName" layoutX="157.0" layoutY="33.0" />
+            <Label fx:id="StudentFirstName" layoutX="13.0" layoutY="38.0" text="Student First Name :" />
+            <TextArea fx:id="textArea" layoutX="336.0" layoutY="362.0" prefHeight="259.0" prefWidth="529.0" />
+            <Label fx:id="StudentLastName" layoutX="14.0" layoutY="93.0" text="Student Last Name :" />
+            <TextField fx:id="tfLastName" layoutX="157.0" layoutY="88.0" />
+            <Label fx:id="EmailAddress" layoutX="13.0" layoutY="148.0" text="Email Address :" />
+            <TextField fx:id="tfEmailAddress" layoutX="157.0" layoutY="143.0" />
+            <Label fx:id="ConfirmEmailAddress" layoutX="14.0" layoutY="202.0" prefHeight="17.0" prefWidth="132.0" text="Confirm Email Address :" />
+            <TextField fx:id="tfConfirmEmailAddress" layoutX="157.0" layoutY="197.0" />
+            <Label fx:id="PassWord" layoutX="14.0" layoutY="260.0" prefHeight="17.0" prefWidth="132.0" text="Password :" />
+            <TextField fx:id="tfPassword" layoutX="157.0" layoutY="255.0" />
+            <Label fx:id="ConfirmPassWord" layoutX="27.0" layoutY="318.0" prefHeight="17.0" prefWidth="132.0" text="Confirm Password :" />
+            <TextField fx:id="tfConfirmPassWord" layoutX="157.0" layoutY="313.0" />
+            <Button fx:id="Cancel" layoutX="131.0" layoutY="668.0" mnemonicParsing="false" onAction="#handleCancelButton" text="Cancel" />
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="1.0" prefHeight="27.0" prefWidth="843.0" text="New Student Registration Form">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="522.0" layoutY="327.0" text="Your Data is Below">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="datePicker" layoutX="146.0" layoutY="373.0" />
+            <Label layoutX="16.0" layoutY="378.0" text="Date Of Birth :" />
+            <Label fx:id="Gender" layoutX="28.0" layoutY="440.0" text="Gender :" />
+            <RadioButton fx:id="Male" layoutX="100.0" layoutY="440.0" mnemonicParsing="false" text="Male" />
+            <RadioButton fx:id="Female" layoutX="194.0" layoutY="440.0" mnemonicParsing="false" text="Female" />
+            <Label fx:id="Department" layoutX="7.0" layoutY="492.0" text="Department :" />
+            <RadioButton fx:id="CM" layoutX="80.0" layoutY="492.0" mnemonicParsing="false" text="CM" />
+            <RadioButton fx:id="ComputerEngineering" layoutX="80.0" layoutY="522.0" mnemonicParsing="false" text="Computer Science and Engineering" />
+            <RadioButton fx:id="Electrical" layoutX="79.0" layoutY="553.0" mnemonicParsing="false" text="Electrical" />
+            <RadioButton fx:id="ElectronicsCommunication" layoutX="79.0" layoutY="583.0" mnemonicParsing="false" text="Electronics and Communication" />
+            <RadioButton fx:id="Mechanical" layoutX="80.0" layoutY="612.0" mnemonicParsing="false" text="Mechanical" />
+         </children></AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
